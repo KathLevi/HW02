@@ -52,26 +52,39 @@ public:
 	 */
 	void save();
 
+
 private:
-	class Directory_Entry /* Exercise 1.6: Please complete the definition of the Directory_Entry class here. - Ed/Kent */
+	// Code added for exercise 1.6. Done by Samuel Wynsma
+	class Directory_Entry 
 	{
 	public:
-		Directory_Entry() {} // Default no-argument constructor
-		Directory_Entry(std::string the_name, std::string the_number) {
-			// constructor not implemented yet
+		Directory_Entry() // The default constructor will not get used, but in the case that the program accidentally uses it, the number and name here are blank.
+		{
+			number = "";
+			name = "";
+		} 
+		// Creates a Directory Entry object with a specified name and number given.
+		Directory_Entry(std::string the_name, std::string the_number)
+		{
+			name = the_name;
+			number = the_number;
 		}
+		// Returns the name string in the entry.
 		std::string get_name() const {
-			return ""; // method not implemented yet
+			return name; 
 		}
+		// Returns the number string in the entry.
 		std::string get_number() const {
-			return ""; // method not implemented yet
+			return number; 
 		}
+		// Sets the number of the entry to a new number given.
 		void set_number(const std::string& new_number) {
-			// method not implemented yet
+			number = new_number;
 		}
 	
 	private:
-
+		string name; // Name of the individual in the entry.
+		string number; // Phone number for the individual.
 	};
 
 	// Private Functions
