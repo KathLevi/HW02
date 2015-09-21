@@ -83,8 +83,8 @@ private:
 		}
 	
 	private:
-		string name; // Name of the individual in the entry.
-		string number; // Phone number for the individual.
+		std::string name; // Name of the individual in the entry.
+		std::string number; // Phone number for the individual.
 	};
 
 	// Private Functions
