@@ -114,7 +114,7 @@ void Phone_Directory::save()
 	if not in the directory
 	*/
 
-// Completed by Kathleen Levi
+//Completed by Kathleen Levi
 string Phone_Directory::remove_entry(const string& name) // Exercise 1.7: please complete the remove_entry() method - Ed/Kent
 {
     string number = "";
