@@ -85,12 +85,20 @@ void do_lookup_entry(Phone_Directory& the_directory)
 	}
 }
 
-void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: please complete the function do_remove_entry - Ed/Kent
+void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: Completed by Brian Ault
 {
 	string name;
 	cout << "Enter name: ";
 	getline(cin, name);
 	// Complete the rest of this function 
+
+	//this code taken from the "find" Function
+	string name2 = the_directory.remove_entry(name);
+
+	if (name2 == name)
+		cout << "The name and number for \"" << name << "\" has been removed from the phonebook successfully.\n\n";
+	else
+		cout << "There was an error removing that name from the phonebook.\n\n";
 	
 }
 
