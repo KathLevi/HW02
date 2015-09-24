@@ -92,9 +92,11 @@ void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: Completed 
 	getline(cin, name);
 	// Complete the rest of this function 
 
-	//this code taken from the "find" Function
+	//runs Kathleen's function
 	string name2 = the_directory.remove_entry(name);
 
+
+	//checks to make sure name is actually removed
 	if (name2 == name)
 		cout << "The name and number for \"" << name << "\" has been removed from the phonebook successfully.\n\n";
 	else
